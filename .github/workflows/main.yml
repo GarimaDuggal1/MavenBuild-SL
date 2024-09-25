@@ -19,7 +19,7 @@ jobs:
       - name: connect to LAB and deploy code on tomcat9
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
         with:
-          host: '65.1.147.194'
+          host: '65.2.40.27'
           user: 'labuser'
           pass: 'Nuvelabs123$'
           port: 22
@@ -33,10 +33,10 @@ jobs:
       - name: connect to LAB and deploy code on tomcat9
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
         with:
-          host: '65.1.147.194'
+          host: '65.2.40.27'
           user: 'labuser'
           pass: 'Nuvelabs123$'
           port: 22
           connect_timeout: 10s
           first_ssh: |
-            sudo curl -l -u admin:11927b71f123b4c53b89fda55b63ebceea http://localhost:8080/job/DeploymentJob/build?token=token22
+            sudo curl -l -u admin: 11265786df634b8b7511edfd05b3541bce http://localhost:8080/job/DeploymentJob/build?token=Token01
