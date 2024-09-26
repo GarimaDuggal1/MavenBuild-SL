@@ -1,3 +1,4 @@
+
 name: CICD using Maven and Jenkins
 on: 
   push:
@@ -19,7 +20,7 @@ jobs:
       - name: connect to LAB and deploy code on tomcat9
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
          with:
-          host: '13.233.38.163'
+          host: '3.110.27.183'
           user: 'labuser'
           pass: 'Nuvelabs123$'
           port: 22
@@ -33,10 +34,10 @@ jobs:
       - name: connect to LAB and deploy code on tomcat9
         uses: cross-the-world/ssh-scp-ssh-pipelines@latest
         with:
-          host: '13.233.38.163'
+          host: '3.110.27.183'
           user: 'labuser'
           pass: 'Nuvelabs123$'
           port: 22
           connect_timeout: 10s
           first_ssh: |
-            sudo curl -l -u admin: 11473de5a7d0ea7f52035f2fb27d6f2586 http://localhost:8080/job/DeploymentJob1/build?token=Token01
+            sudo curl -l -u admin: 113a6c9d40ec082f8524af575edb18609e http://localhost:8080/job/DeploymentJob1/build?token=Token01
